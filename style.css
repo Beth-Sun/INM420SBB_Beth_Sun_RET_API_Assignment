@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.control {
+  font-family: "Roboto Mono", monospace;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: start;
+  align-items: center;
+  color: green;
+}
+.control>h1 {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.control>h1>img {
+  width: 30px;
+}
+
+.control>form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+}
+
+
+.control>form>input {
+  flex: 1;
+  padding: 5px;
+  border: 0;
+  border-bottom: 1px solid lime;
+}
+
+.control>form>input:focus {
+  outline: 0;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content img, .content iframe {
+  width: 100%;
+}
+
+.content>figure {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.content div.explanation {
+  padding: 30px 20px;
+  line-height: 150%;
+}
+
+.logo {
+  display: none;
+  align-items: center;
+  font-size: 40px;
+  font-weight: bold;
+  justify-content: center;
+  padding: 20px 0;
+}
+.logo>img {
+  width: 80px;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    flex-direction: row;
+    height: 100vh;
+  }
+
+  .control {
+    min-width: 270px;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+    border-right: 1px solid lime;
+    border-radius: 20px;
+  }
+
+  .content {
+    overflow-y: auto;
+  }
+
+  .content>figure {
+    flex-direction: column-reverse;
+    align-items: end;
+  }
+
+  .control>h1>img  {
+    display: none;
+  }
+  .logo {
+    display: flex;
+  }
+}
