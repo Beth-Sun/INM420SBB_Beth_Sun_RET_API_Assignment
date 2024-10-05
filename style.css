@@ -41,6 +41,7 @@ main {
   padding: 5px;
   border: 0;
   border-bottom: 1px solid lime;
+  color: blue;
 }
 
 .control>form>input:focus {
@@ -54,6 +55,11 @@ main {
 
 .content img, .content iframe {
   width: 100%;
+}
+
+.content iframe {
+  height: 50vh;
+  min-height: 500px;
 }
 
 .content>figure {
@@ -93,7 +99,7 @@ main {
     align-items: start;
     justify-content: center;
     gap: 30px;
-    border-right: 1px solid lime;
+    border-right: 1px solid blue;
     border-radius: 20px;
   }
 
